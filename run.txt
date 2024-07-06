@@ -1,0 +1,11 @@
+python val.py --data data/dotav1_poly.yaml --weights runs/train/exp8/weights/last.pt --batch-size 16 --img 1024 --task test --device 0,1 --save-json --name obb_demo_split
+python tools/TestJson2VocClassTxt.py --json_path runs/val/obb_demo_split/last_obb_predictions.json --save_path runs/val/obb_demo_split/obb_predictions_Txt
+python DOTA_devkit/ResultMerge_multi_process.py --scrpath runs/val/obb_demo_split/obb_predictions_Txt --dstpath runs/val/obb_demo_split/obb_predictions_Txt_Merged
+python DOTA_devkit/dota_evaluation_task1.py --detpath runs/val/obb_demo_split/obb_predictions_Txt_Merged/Task1_{:s}.txt --annopath D:\mmrotate-0.3.2\data\DOTA\val\labelTxt\{:s}.txt --imagesetfile D:\mmrotate-0.3.2\data\DOTA\val\imgnamefile.txt
+python DOTA_devkit/dota_evaluation_task1_ap75.py --detpath runs/val/obb_demo_split/obb_predictions_Txt_Merged/Task1_{:s}.txt --annopath D:\mmrotate-0.3.2\data\DOTA\val\labelTxt\{:s}.txt --imagesetfile D:\mmrotate-0.3.2\data\DOTA\val\imgnamefile.txt
+
+
+python train.py --weights weights/yolov5m.pt --data data/dotav1_poly.yaml --hyp data/hyps/obb/hyp.finetune_dota.yaml --epochs 300 --batch-size 12 --img 1024 --device 1,0
+
+
+python detect.py --weights runs/train/exp8/weights/last.pt --source dataset/dataset_demo/images/ --img 1024 --device 0,1 --conf-thres 0.25 --iou-thres 0.2 --hide-labels --hide-conf
