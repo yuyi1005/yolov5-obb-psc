@@ -23,7 +23,7 @@ Files involved to replace CSL with PSC:
 }
 ```
 
-## Below are the instructions from the original repository (YOLOv5+CSL).
+## Below are the instructions from the original repository (YOLOv5+CSL)
 
 ![图片](./docs/detection.png)
 ![train_batch0.jpg](./docs/train_batch6.jpg)
