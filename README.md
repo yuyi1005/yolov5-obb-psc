@@ -1,6 +1,10 @@
-# Yolov5 for Oriented Object Detection using PSC
+# YOLOv5+PSC for Oriented Object Detection
 
 The code is modified from [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb) to support YOLOv5+PSC.
+Files involved to replace CSL with PSC: 
+models/yolo.py
+utils/general.py
+utils/loss.py
 
 ## Publication
 
