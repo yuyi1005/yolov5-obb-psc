@@ -1,6 +1,6 @@
 # Yolov5 for Oriented Object Detection using PSC
 
-The code is modified from [yolov5_obb(https://github.com/hukaixuan19970627/yolov5_obb)] to support YOLOv5+PSC.
+The code is modified from [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb) to support YOLOv5+PSC.
 
 ## Publication
 
