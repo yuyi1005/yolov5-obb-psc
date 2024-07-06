@@ -1,4 +1,25 @@
-# Yolov5 for Oriented Object Detection
+# Yolov5 for Oriented Object Detection using PSC
+
+The code is modified from [yolov5_obb(https://github.com/hukaixuan19970627/yolov5_obb)] to support YOLOv5+PSC.
+
+## Publication
+
+[Phase-Shifting Coder: Predicting Accurate Orientation in Oriented Object Detection](https://arxiv.org/abs/2211.06368)
+
+## Citation
+
+```
+@inproceedings{yu2023psc,
+    author = {Yu, Yi and Da, Feipeng},
+    title = {Phase-Shifting Coder: Predicting Accurate Orientation in Oriented Object Detection},
+    booktitle = {Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2023},
+    url = {https://arxiv.org/abs/2211.06368}
+}
+```
+
+Below are the instructions from the original repository (YOLOv5+CSL).
+
 ![图片](./docs/detection.png)
 ![train_batch0.jpg](./docs/train_batch6.jpg)
 ![results.png](./docs/results.png)
