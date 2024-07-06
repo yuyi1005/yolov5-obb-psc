@@ -12,7 +12,7 @@ The code is modified from [yolov5_obb(https://github.com/hukaixuan19970627/yolov
 @inproceedings{yu2023psc,
     author = {Yu, Yi and Da, Feipeng},
     title = {Phase-Shifting Coder: Predicting Accurate Orientation in Oriented Object Detection},
-    booktitle = {Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year = {2023},
     url = {https://arxiv.org/abs/2211.06368}
 }
